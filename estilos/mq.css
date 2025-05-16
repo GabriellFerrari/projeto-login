@@ -1,0 +1,51 @@
+@charset "UTF-8";
+/*
+- Pequenas telas: até 576px — smartphones compactos ou modelos antigos.
+- Celular: de 577px até 768px — smartphones modernos com tela média ou grande.
+- Tablet: de 769px até 1024px — tablets grandes ou notebooks menores.
+- Desktop: de 1025px até 1440px — notebooks padrão e monitores comuns de PC.
+- Grandes telas: acima de 1440px — monitores ultrawide, telas 4K e TVs.
+*/
+
+@media screen and (min-width:769px) and (max-width:1024px){
+    
+    body{
+        background-image: linear-gradient(to top,#3e7922,#1D400D);
+    }
+    
+    section#Login{
+        width:80vw ;
+    }
+
+    section#Login > div#imagem {
+        float: left;
+        width:30% ;
+        height: 100%;
+    }
+
+    section#Login > div#formulario{
+        float: right;
+        width: 70%;
+    }
+}
+
+@media screen and (min-width:1025px) and (max-width:1440px){
+    
+    body{
+        background-image: linear-gradient(to top,#3e7922,#1D400D);
+    }
+
+    section#Login{
+        width:  800px;
+    }
+
+    section#Login > div#imagem{
+        float: left;
+        width: 50%;
+        height:100% ;
+    }
+    section#Login > div#formulario{
+        float: right;
+        width:50%
+    }
+}
